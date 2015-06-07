@@ -1,0 +1,36 @@
+<html>
+
+<body>
+
+<label for="mensagem">mensagem: </label>
+<textarea rows="2" cols="50" name="mensagem" id="mensagem"></textarea><br />
+
+
+<label for="password">password: </label>
+<textarea rows="2" cols="50" name="password" id="password"></textarea><br />
+
+<label for="salt">salt: </label>
+<textarea rows="2" cols="50" name="salt" id="salt"></textarea><br />
+
+<label for="iv">iv: </label>
+<textarea rows="2" cols="50" name="iv" id="iv"></textarea><br />
+    
+<label for="mensagem_criptografada">mensagem_criptografada: </label>
+<textarea rows="2" cols="50" name="mensagem_criptografada" id="mensagem_criptografada"></textarea><br /><br />
+    
+<label for="mensagem_descriptografada">mensagem_descriptografada: </label>
+<textarea rows="2" cols="50" name="mensagem_descriptografada" id="mensagem_descriptografada"></textarea><br />
+
+
+<div class="center">
+    
+<button type="button" onclick="encrypt()">encrypt</button>
+<button type="button" onclick="decrypt()">decrypt</button>
+</div>
+
+</body>
+
+<script src="/aes.js"></script>
+<script src="/forge.min.js"></script>
+
+</html>
